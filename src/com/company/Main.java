@@ -19,7 +19,7 @@ public class Main {
   public static void main (String[] args) {
     final int POPULATION_SIZE = 10000;
     final int NUM_ELITES = 5;
-    final Selection selection = new TournamentSelection(1000, 2);// select fittest 1/param of population
+    final Selection selection = new RouletteWheelSelection(POPULATION_SIZE);// select fittest 1/param of population
     final Crossover crossover = new PMX (); // partially mapped crossover
 
     // switch two random cities on the average in in 1/param individuals
